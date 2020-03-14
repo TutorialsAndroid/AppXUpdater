@@ -1,0 +1,12 @@
+<AppUpdater>
+  <update>
+    <latestVersion>1.0.19</latestVersion>
+    <latestVersionCode>1</latestVersionCode>
+    <url>https://github.com/TutorialsAndroid/AppXUpdater/releases</url>
+    <releaseNotes>
+- First evolution
+- Second evolution
+- Bug fixes
+    </releaseNotes>
+  </update>
+</AppUpdater>
