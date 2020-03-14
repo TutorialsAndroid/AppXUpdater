@@ -1,6 +1,10 @@
 ## AppXUpdater
 
 <p align="center">Android Library that checks for updates on Google Play, GitHub, Amazon, F-Droid or your own server. This library notifies your apps' updates by showing a Material dialog, Snackbar or notification.
+	
+**LIBRARY AVAILABLE ON JITPACK.IO**
+
+[![](https://jitpack.io/v/TutorialsAndroid/AppXUpdater.svg)](https://jitpack.io/#TutorialsAndroid/AppXUpdater)
 
 ## How to include
 Add the repository to your project **build.gradle**:
