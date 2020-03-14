@@ -133,7 +133,7 @@ AppUpdaterUtils appUpdaterUtils = new AppUpdaterUtils(this)
 appUpdaterUtils.start();
 ```
 
-![AppXUpdater](https://raw.githubusercontent.com/TutorialsAndroid/AppXUpdater/master/files/screenshot.png)
+![AppXUpdater](https://github.com/TutorialsAndroid/AppXUpdater/blob/master/files/screenshot.png)
 
 ## License
 	Copyright 2020 Tutorials Android
