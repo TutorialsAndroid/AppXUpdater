@@ -65,13 +65,11 @@ new AppUpdater(this)
 	...
 ```
 
-When using GitHub you must provide the repo where the library will check for updates: `.setGitHubUserAndRepo("javiersantos", "AppUpdater")`. Check out the [wiki](https://github.com/javiersantos/AppUpdater/wiki/UpdateFrom.GITHUB) for more details.
+When using GitHub you must provide the repo where the library will check for updates: `.setGitHubUserAndRepo("TutorialsAndroid", "AppXUpdater")`
 
-When using the XML source you must upload a .xml file somewhere on the Internet following the structure explained in the [wiki](https://github.com/javiersantos/AppUpdater/wiki/UpdateFrom.XML) and add the URL as shown in this example: `.setUpdateXML("https://raw.githubusercontent.com/javiersantos/AppUpdater/master/app/update-changelog.xml")`.
+When using the XML source you must upload a .xml file somewhere on the Internet and add the URL as shown in this example: `.setUpdateXML("https://raw.githubusercontent.com/TutorialsAndroid/AppXUpdater/master/files/update-changelog.xml")`.
 
-When using the JSON source you must upload a .json file somewhere on the Internet following the structure explained in the [wiki](https://github.com/javiersantos/AppUpdater/wiki/UpdateFrom.JSON) and add the URL as shown in this example: `.setUpdateJSON("https://raw.githubusercontent.com/javiersantos/AppUpdater/master/app/update-changelog.json")`.
-
-A detailed description with examples is available at: https://github.com/javiersantos/AppUpdater/wiki
+When using the JSON source you must upload a .json file somewhere on the Internet and add the URL as shown in this example: `.setUpdateJSON("https://raw.githubusercontent.com/TutorialsAndroid/AppXUpdater/master/files/update-changelog.json")`.
 
 ### Setting the frequency to show updates
 By default, a dialog/Snackbar/notification will be shown whenever a new version is found. However, this can be set to show only every X times that the app ascertains that a new update is available.
@@ -135,7 +133,7 @@ AppUpdaterUtils appUpdaterUtils = new AppUpdaterUtils(this)
 appUpdaterUtils.start();
 ```
 
-![AppUpdater](https://raw.githubusercontent.com/TutorialsAndroid/AppXUpdater/master/files/screenshot.png)
+![AppXUpdater](https://raw.githubusercontent.com/TutorialsAndroid/AppXUpdater/master/files/screenshot.png)
 
 ## License
 	Copyright 2020 Tutorials Android
