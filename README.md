@@ -1,6 +1,16 @@
 ## AppXUpdater
 
 <p align="center">Android Library that checks for updates on Google Play, GitHub, Amazon, F-Droid or your own server. This library notifies your apps' updates by showing a Material dialog, Snackbar or notification.
+	
+## Download Our New Android App
+
+[Cocktail Friendship App](https://play.google.com/store/apps/details?id=developer.cocktail)
+
+**This library was made to use for `Cocktail Friendship App` We made this library for cocktail app. So we decided to make this library open source so other users can use this library and contribute to this library** 
+	
+**LIBRARY AVAILABLE ON JITPACK.IO**
+
+[![](https://jitpack.io/v/TutorialsAndroid/AppXUpdater.svg)](https://jitpack.io/#TutorialsAndroid/AppXUpdater)
 
 ## How to include
 Add the repository to your project **build.gradle**:
