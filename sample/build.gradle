@@ -42,4 +42,6 @@ dependencies {
 	
 	//Library Implementation
     implementation project(':library')
+
+    //implementation 'com.github.TutorialsAndroid:AppXUpdater:v1.0.20'
 }
