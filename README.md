@@ -1,14 +1,10 @@
 ## AppXUpdater [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-AppXUpdater-blue.svg?style=flat-square)](https://android-arsenal.com/details/1/8063) [![API](https://img.shields.io/badge/API-21%2B-yellow.svg?style=flat-square)](https://android-arsenal.com/api?level=21)
 
 <p align="center">Android Library that checks for updates on Google Play, GitHub, Amazon, F-Droid or your own server. This library notifies your apps' updates by showing a Material dialog, Snackbar or notification.
-	
-## Download Our New Android App
 
-[Cocktail Friendship App](https://play.google.com/store/apps/details?id=developer.cocktail)
+## Hire-Me
 
-## Hire-Us
-
-<p align="center">Are you having trouble in your android projects then let us help you with it just Email Us. We love our users, so feel free to visit https://asm.life
+<p align="center">Are you having trouble in your android projects then let me help you with it just Email Us. We love our users, so feel free to visit https://asm.life
 
 **This library was made to use for `Cocktail Friendship App` We made this library for cocktail app. So we decided to make this library open source so other users can use this library and contribute to this library** 
 	
