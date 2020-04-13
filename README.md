@@ -4,9 +4,7 @@
 
 ## Hire-Me
 
-<p align="center">Are you having trouble in your android projects then let me help you with it just Email me. We love our users, so feel free to visit https://asm.life
-
-**This library was made to use for `Cocktail Friendship App` We made this library for cocktail app. So we decided to make this library open source so other users can use this library and contribute to this library** 
+<p align="center">Are you having trouble in your android projects then let me help you with it just Email me. I love my users, so feel free to visit https://asm.life
 	
 **LIBRARY AVAILABLE ON JITPACK.IO**
 
