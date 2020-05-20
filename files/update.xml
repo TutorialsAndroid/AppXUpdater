@@ -1,7 +1,7 @@
 <AppUpdater>
   <update>
-    <latestVersion>1.0.19</latestVersion>
-    <latestVersionCode>1</latestVersionCode>
+    <latestVersion>3.0.20</latestVersion>
+    <latestVersionCode>2</latestVersionCode>
     <url>https://github.com/TutorialsAndroid/AppXUpdater/releases</url>
   </update>
 </AppUpdater>
