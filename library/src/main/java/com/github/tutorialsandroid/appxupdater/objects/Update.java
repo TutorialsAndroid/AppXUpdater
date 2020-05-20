@@ -2,6 +2,9 @@ package com.github.tutorialsandroid.appxupdater.objects;
 
 import java.net.URL;
 
+/**
+ * @author tkdco
+ */
 public class Update {
     private String version;
     private Integer versionCode;

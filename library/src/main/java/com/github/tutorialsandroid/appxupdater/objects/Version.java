@@ -2,6 +2,9 @@ package com.github.tutorialsandroid.appxupdater.objects;
 
 import androidx.annotation.NonNull;
 
+/**
+ * @author TutorialsAndroid
+ */
 public class Version implements Comparable<Version> {
     private String version;
 

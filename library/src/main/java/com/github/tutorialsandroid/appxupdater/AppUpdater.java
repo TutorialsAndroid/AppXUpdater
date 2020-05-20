@@ -22,6 +22,9 @@ import com.google.android.material.snackbar.Snackbar;
 
 import org.jetbrains.annotations.NotNull;
 
+/**
+ * @author tkdco , TutorialsAndroid
+ */
 public class AppUpdater implements IAppUpdater {
     private Context context;
     private LibraryPreferences libraryPreferences;

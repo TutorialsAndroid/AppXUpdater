@@ -5,10 +5,10 @@ android {
 
     defaultConfig {
         applicationId "com.github.tutorialsandroid.appxupdater.demo"
-        minSdkVersion 21
+        minSdkVersion 15
         targetSdkVersion 29
-		versionCode 1
-        versionName "1.0.20"
+		versionCode 2
+        versionName "2.0.20"
     }
 
     buildTypes {

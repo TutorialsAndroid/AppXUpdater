@@ -1,5 +1,8 @@
 package com.github.tutorialsandroid.appxupdater.enums;
 
+/**
+ * @author TutorialsAndroid
+ */
 public enum AppUpdaterError {
     /**
      * Google Play returned "Varies by device"

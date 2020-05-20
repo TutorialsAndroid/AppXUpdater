@@ -15,6 +15,9 @@ import com.github.tutorialsandroid.appxupdater.enums.Duration;
 import com.github.tutorialsandroid.appxupdater.enums.UpdateFrom;
 import com.github.tutorialsandroid.appxupdater.objects.Update;
 
+/**
+ * @author Tushar Masram
+ */
 public interface IAppUpdater {
     /**
      * Set the type of message used to notify the user when a new update has been found. Default: DIALOG.

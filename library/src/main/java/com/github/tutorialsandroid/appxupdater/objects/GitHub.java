@@ -1,5 +1,8 @@
 package com.github.tutorialsandroid.appxupdater.objects;
 
+/**
+ * @author Tushar Masram
+ */
 public class GitHub {
     private String gitHubUser;
     private String gitHubRepo;

@@ -1,5 +1,8 @@
 package com.github.tutorialsandroid.appxupdater.enums;
 
+/**
+ * @author TutorialsAndroid
+ */
 public enum UpdateFrom {
     /**
      * @see <a href="https://github.com/javiersantos/AppUpdater/wiki/UpdateFrom.GOOGLE_PLAY">Wiki: UpdateFrom.GOOGLE_PLAY</a>
