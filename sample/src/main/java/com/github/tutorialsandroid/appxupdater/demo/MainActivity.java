@@ -50,8 +50,8 @@ public class MainActivity extends AppCompatActivity {
                 .start());
 
         binding.included.snackbarUpdate.setOnClickListener(view -> new AppUpdater(mContext)
-                //.setUpdateFrom(UpdateFrom.GITHUB)
-                //.setGitHubUserAndRepo("TutorialsAndroid", "AppXUpdater")
+                .setUpdateFrom(UpdateFrom.GITHUB)
+                .setGitHubUserAndRepo("TutorialsAndroid", "AppXUpdater")
                 .setUpdateFrom(UpdateFrom.XML)
                 .setUpdateXML("https://raw.githubusercontent.com/TutorialsAndroid/AppXUpdater/master/files/update.xml")
                 .setDisplay(Display.SNACKBAR)
