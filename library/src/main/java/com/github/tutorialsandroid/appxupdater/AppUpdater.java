@@ -284,7 +284,7 @@ public class AppUpdater implements IAppUpdater {
     }
 
     @Override
-    public AppUpdater setButtonDoNotShowAgain(@NonNull String text) {
+    public AppUpdater setButtonDoNotShowAgain(String text) {
         this.btnDisable = text;
         return this;
     }
