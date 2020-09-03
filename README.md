@@ -4,6 +4,7 @@
 
 ## Converted to Kotlin
 We converted the whole project to kotlin
+<br/>
 **LIBRARY AVAILABLE ON JITPACK.IO**
 
 [![](https://jitpack.io/v/TutorialsAndroid/AppXUpdater.svg)](https://jitpack.io/#TutorialsAndroid/AppXUpdater)
