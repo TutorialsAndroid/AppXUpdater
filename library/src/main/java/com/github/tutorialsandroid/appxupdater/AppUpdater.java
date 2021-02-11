@@ -22,10 +22,8 @@ import com.google.android.material.snackbar.Snackbar;
 
 import org.jetbrains.annotations.NotNull;
 
-/**
- * @author tkdco , TutorialsAndroid
- */
 public class AppUpdater implements IAppUpdater {
+
     private Context context;
     private LibraryPreferences libraryPreferences;
     private Display display;
@@ -114,20 +112,6 @@ public class AppUpdater implements IAppUpdater {
     }
 
     @Override
-    @Deprecated
-    public AppUpdater setDialogTitleWhenUpdateAvailable(@NotNull @NonNull String title) {
-        setTitleOnUpdateAvailable(title);
-        return this;
-    }
-
-    @Override
-    @Deprecated
-    public AppUpdater setDialogTitleWhenUpdateAvailable(@StringRes int textResource) {
-        setTitleOnUpdateAvailable(textResource);
-        return this;
-    }
-
-    @Override
     public AppUpdater setTitleOnUpdateAvailable(@NotNull @NonNull String title) {
         this.titleUpdate = title;
         return this;
@@ -136,20 +120,6 @@ public class AppUpdater implements IAppUpdater {
     @Override
     public AppUpdater setTitleOnUpdateAvailable(@StringRes int textResource) {
         this.titleUpdate = context.getString(textResource);
-        return this;
-    }
-
-    @Override
-    @Deprecated
-    public AppUpdater setDialogDescriptionWhenUpdateAvailable(@NotNull @NonNull String description) {
-        setContentOnUpdateAvailable(description);
-        return this;
-    }
-
-    @Override
-    @Deprecated
-    public AppUpdater setDialogDescriptionWhenUpdateAvailable(@StringRes int textResource) {
-        setContentOnUpdateAvailable(textResource);
         return this;
     }
 
@@ -166,20 +136,6 @@ public class AppUpdater implements IAppUpdater {
     }
 
     @Override
-    @Deprecated
-    public AppUpdater setDialogTitleWhenUpdateNotAvailable(@NotNull @NonNull String title) {
-        setTitleOnUpdateNotAvailable(title);
-        return this;
-    }
-
-    @Override
-    @Deprecated
-    public AppUpdater setDialogTitleWhenUpdateNotAvailable(@StringRes int textResource) {
-        setTitleOnUpdateNotAvailable(textResource);
-        return this;
-    }
-
-    @Override
     public AppUpdater setTitleOnUpdateNotAvailable(@NotNull @NonNull String title) {
         this.titleNoUpdate = title;
         return this;
@@ -188,20 +144,6 @@ public class AppUpdater implements IAppUpdater {
     @Override
     public AppUpdater setTitleOnUpdateNotAvailable(@StringRes int textResource) {
         this.titleNoUpdate = context.getString(textResource);
-        return this;
-    }
-
-    @Override
-    @Deprecated
-    public AppUpdater setDialogDescriptionWhenUpdateNotAvailable(@NotNull @NonNull String description) {
-        setContentOnUpdateNotAvailable(description);
-        return this;
-    }
-
-    @Override
-    @Deprecated
-    public AppUpdater setDialogDescriptionWhenUpdateNotAvailable(@StringRes int textResource) {
-        setContentOnUpdateNotAvailable(textResource);
         return this;
     }
 
@@ -218,20 +160,6 @@ public class AppUpdater implements IAppUpdater {
     }
 
     @Override
-    @Deprecated
-    public AppUpdater setDialogButtonUpdate(@NotNull @NonNull String text) {
-        setButtonUpdate(text);
-        return this;
-    }
-
-    @Override
-    @Deprecated
-    public AppUpdater setDialogButtonUpdate(@StringRes int textResource) {
-        setButtonUpdate(textResource);
-        return this;
-    }
-
-    @Override
     public AppUpdater setButtonUpdate(@NotNull @NonNull String text) {
         this.btnUpdate = text;
         return this;
@@ -244,20 +172,6 @@ public class AppUpdater implements IAppUpdater {
     }
 
     @Override
-    @Deprecated
-    public AppUpdater setDialogButtonDismiss(@NotNull @NonNull String text) {
-        setButtonDismiss(text);
-        return this;
-    }
-
-    @Override
-    @Deprecated
-    public AppUpdater setDialogButtonDismiss(@StringRes int textResource) {
-        setButtonDismiss(textResource);
-        return this;
-    }
-
-    @Override
     public AppUpdater setButtonDismiss(@NotNull @NonNull String text) {
         this.btnDismiss = text;
         return this;
@@ -266,20 +180,6 @@ public class AppUpdater implements IAppUpdater {
     @Override
     public AppUpdater setButtonDismiss(@StringRes int textResource) {
         this.btnDismiss = context.getString(textResource);
-        return this;
-    }
-
-    @Override
-    @Deprecated
-    public AppUpdater setDialogButtonDoNotShowAgain(@NotNull @NonNull String text) {
-        setButtonDoNotShowAgain(text);
-        return this;
-    }
-
-    @Override
-    @Deprecated
-    public AppUpdater setDialogButtonDoNotShowAgain(@StringRes int textResource) {
-        setButtonDoNotShowAgain(textResource);
         return this;
     }
 

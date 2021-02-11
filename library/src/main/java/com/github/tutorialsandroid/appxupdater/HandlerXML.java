@@ -10,6 +10,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 class HandlerXML extends DefaultHandler {
+
     private Update update;
     private StringBuilder builder;
 
@@ -31,18 +32,23 @@ class HandlerXML extends DefaultHandler {
         super.endElement(uri, localName, name);
 
         if (this.update != null) {
-            if (localName.equals("latestVersion")) {
-                update.setLatestVersion(builder.toString().trim());
-            } else if (localName.equals("latestVersionCode")) {
-                update.setLatestVersionCode(Integer.valueOf(builder.toString().trim()));
-            } else if (localName.equals("releaseNotes")) {
-                update.setReleaseNotes(builder.toString().trim());
-            } else if (localName.equals("url")) {
-                try {
-                    update.setUrlToDownload(new URL(builder.toString().trim()));
-                } catch (MalformedURLException e) {
-                    throw new RuntimeException(e);
-                }
+            switch (localName) {
+                case "latestVersion":
+                    update.setLatestVersion(builder.toString().trim());
+                    break;
+                case "latestVersionCode":
+                    update.setLatestVersionCode(Integer.valueOf(builder.toString().trim()));
+                    break;
+                case "releaseNotes":
+                    update.setReleaseNotes(builder.toString().trim());
+                    break;
+                case "url":
+                    try {
+                        update.setUrlToDownload(new URL(builder.toString().trim()));
+                    } catch (MalformedURLException e) {
+                        throw new RuntimeException(e);
+                    }
+                    break;
             }
 
             builder.setLength(0);

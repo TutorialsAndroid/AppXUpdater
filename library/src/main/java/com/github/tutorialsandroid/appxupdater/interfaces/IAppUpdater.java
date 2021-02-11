@@ -15,9 +15,6 @@ import com.github.tutorialsandroid.appxupdater.enums.Duration;
 import com.github.tutorialsandroid.appxupdater.enums.UpdateFrom;
 import com.github.tutorialsandroid.appxupdater.objects.Update;
 
-/**
- * @author Tushar Masram
- */
 public interface IAppUpdater {
     /**
      * Set the type of message used to notify the user when a new update has been found. Default: DIALOG.
@@ -94,24 +91,6 @@ public interface IAppUpdater {
      *
      * @param title for the dialog
      * @return this
-     * @deprecated use {@link #setTitleOnUpdateAvailable(String)} instead
-     */
-    AppUpdater setDialogTitleWhenUpdateAvailable(@NonNull String title);
-
-    /**
-     * Set a custom title for the dialog when an update is available.
-     *
-     * @param textResource resource from the strings xml file for the dialog
-     * @return this
-     * @deprecated use {@link #setTitleOnUpdateAvailable(int)} instead
-     */
-    AppUpdater setDialogTitleWhenUpdateAvailable(@StringRes int textResource);
-
-    /**
-     * Set a custom title for the dialog when an update is available.
-     *
-     * @param title for the dialog
-     * @return this
      */
     AppUpdater setTitleOnUpdateAvailable(@NonNull String title);
 
@@ -122,24 +101,6 @@ public interface IAppUpdater {
      * @return this
      */
     AppUpdater setTitleOnUpdateAvailable(@StringRes int textResource);
-
-    /**
-     * Set a custom description for the dialog when an update is available.
-     *
-     * @param description for the dialog
-     * @return this
-     * @deprecated use {@link #setContentOnUpdateAvailable(String)} instead
-     */
-    AppUpdater setDialogDescriptionWhenUpdateAvailable(@NonNull String description);
-
-    /**
-     * Set a custom description for the dialog when an update is available.
-     *
-     * @param textResource resource from the strings xml file for the dialog
-     * @return this
-     * @deprecated use {@link #setContentOnUpdateAvailable(int)} instead
-     */
-    AppUpdater setDialogDescriptionWhenUpdateAvailable(@StringRes int textResource);
 
     /**
      * Set a custom description for the dialog when an update is available.
@@ -162,24 +123,6 @@ public interface IAppUpdater {
      *
      * @param title for the dialog
      * @return this
-     * @deprecated use {@link #setTitleOnUpdateNotAvailable(String)} instead
-     */
-    AppUpdater setDialogTitleWhenUpdateNotAvailable(@NonNull String title);
-
-    /**
-     * Set a custom title for the dialog when no update is available.
-     *
-     * @param textResource resource from the strings xml file for the dialog
-     * @return this
-     * @deprecated use {@link #setTitleOnUpdateNotAvailable(int)} instead
-     */
-    AppUpdater setDialogTitleWhenUpdateNotAvailable(@StringRes int textResource);
-
-    /**
-     * Set a custom title for the dialog when no update is available.
-     *
-     * @param title for the dialog
-     * @return this
      */
     AppUpdater setTitleOnUpdateNotAvailable(@NonNull String title);
 
@@ -190,24 +133,6 @@ public interface IAppUpdater {
      * @return this
      */
     AppUpdater setTitleOnUpdateNotAvailable(@StringRes int textResource);
-
-    /**
-     * Set a custom description for the dialog when no update is available.
-     *
-     * @param description for the dialog
-     * @return this
-     * @deprecated use {@link #setContentOnUpdateNotAvailable(String)} instead
-     */
-    AppUpdater setDialogDescriptionWhenUpdateNotAvailable(@NonNull String description);
-
-    /**
-     * Set a custom description for the dialog when no update is available.
-     *
-     * @param textResource resource from the strings xml file for the dialog
-     * @return this
-     * @deprecated use {@link #setContentOnUpdateNotAvailable(int)} instead
-     */
-    AppUpdater setDialogDescriptionWhenUpdateNotAvailable(@StringRes int textResource);
 
     /**
      * Set a custom description for the dialog when no update is available.
@@ -230,24 +155,6 @@ public interface IAppUpdater {
      *
      * @param text for the update button
      * @return this
-     * @deprecated use {@link #setButtonUpdate(String)} instead
-     */
-    AppUpdater setDialogButtonUpdate(@NonNull String text);
-
-    /**
-     * Set a custom "Update" button text when a new update is available.
-     *
-     * @param textResource resource from the strings xml file for the update button
-     * @return this
-     * @deprecated use {@link #setButtonUpdate(int)} instead
-     */
-    AppUpdater setDialogButtonUpdate(@StringRes int textResource);
-
-    /**
-     * Set a custom "Update" button text when a new update is available.
-     *
-     * @param text for the update button
-     * @return this
      */
     AppUpdater setButtonUpdate(@NonNull String text);
 
@@ -258,24 +165,6 @@ public interface IAppUpdater {
      * @return this
      */
     AppUpdater setButtonUpdate(@StringRes int textResource);
-
-    /**
-     * Set a custom "Dismiss" button text when a new update is available.
-     *
-     * @param text for the dismiss button
-     * @return this
-     * @deprecated use {@link #setButtonDismiss(String)} instead
-     */
-    AppUpdater setDialogButtonDismiss(@NonNull String text);
-
-    /**
-     * Set a custom "Dismiss" button text when a new update is available.
-     *
-     * @param textResource resource from the strings xml file for the dismiss button
-     * @return this
-     * @deprecated  use {@link #setButtonDismiss(int)} instead
-     */
-    AppUpdater setDialogButtonDismiss(@StringRes int textResource);
 
     /**
      * Set a custom "Dismiss" button text when a new update is available.
@@ -298,26 +187,8 @@ public interface IAppUpdater {
      *
      * @param text for the disable button
      * @return this
-     * @deprecated use {@link #setButtonDoNotShowAgain(String)} instead
      */
-    AppUpdater setDialogButtonDoNotShowAgain(@NonNull String text);
-
-    /**
-     * Set a custom "Don't show again" button text when a new update is available.
-     *
-     * @param textResource resource from the strings xml file for the disable button
-     * @return this
-     * @deprecated use {@link #setButtonDoNotShowAgain(int)} instead
-     */
-    AppUpdater setDialogButtonDoNotShowAgain(@StringRes int textResource);
-
-    /**
-     * Set a custom "Don't show again" button text when a new update is available.
-     *
-     * @param text for the disable button
-     * @return this
-     */
-    AppUpdater setButtonDoNotShowAgain(@NonNull String text);
+    AppUpdater setButtonDoNotShowAgain(String text);
 
     /**
      * Set a custom "Don't show again" button text when a new update is available.

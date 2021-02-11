@@ -7,7 +7,6 @@ import android.app.PendingIntent;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.media.RingtoneManager;
-import android.view.View;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.core.app.NotificationCompat;
@@ -32,10 +31,7 @@ class UtilsDisplay {
         return new AlertDialog.Builder(context)
                 .setTitle(title)
                 .setMessage(content)
-                .setPositiveButton(context.getResources().getString(android.R.string.ok), new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {}
-                })
+                .setPositiveButton(context.getResources().getString(android.R.string.ok), (dialogInterface, i) -> {})
                 .create();
     }
 
@@ -50,12 +46,7 @@ class UtilsDisplay {
         }*/
 
         Snackbar snackbar = Snackbar.make(activity.findViewById(android.R.id.content), content, snackbarTime);
-        snackbar.setAction(context.getResources().getString(R.string.appupdater_btn_update), new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                UtilsLibrary.goToUpdate(context, updateFrom, apk);
-            }
-        });
+        snackbar.setAction(context.getResources().getString(R.string.appupdater_btn_update), view -> UtilsLibrary.goToUpdate(context, updateFrom, apk));
         return snackbar;
     }
 
@@ -83,6 +74,7 @@ class UtilsDisplay {
         NotificationCompat.Builder builder = getBaseNotification(context, contentIntent, title, content, smallIconResourceId)
                 .addAction(R.drawable.ic_system_update_white_24dp, context.getResources().getString(R.string.appupdater_btn_update), pendingIntentUpdate);
 
+        assert notificationManager != null;
         notificationManager.notify(0, builder.build());
     }
 
@@ -95,6 +87,7 @@ class UtilsDisplay {
         NotificationCompat.Builder builder = getBaseNotification(context, contentIntent, title, content, smallIconResourceId)
                 .setAutoCancel(true);
 
+        assert notificationManager != null;
         notificationManager.notify(0, builder.build());
     }
 

@@ -25,7 +25,9 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
 import java.util.Locale;
+import java.util.Objects;
 
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -57,7 +59,7 @@ class UtilsLibrary {
     }
 
     static Integer getAppInstalledVersionCode(Context context) {
-        Integer versionCode = 0;
+        int versionCode = 0;
 
         try {
             versionCode = context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionCode;
@@ -92,7 +94,7 @@ class UtilsLibrary {
     }
 
     static Boolean isStringAnUrl(String s) {
-        Boolean res = false;
+        boolean res = false;
         try {
             new URL(s);
             res = true;
@@ -102,12 +104,10 @@ class UtilsLibrary {
     }
 
     static Boolean getDurationEnumToBoolean(Duration duration) {
-        Boolean res = false;
+        boolean res = false;
 
-        switch (duration) {
-            case INDEFINITE:
-                res = true;
-                break;
+        if (duration == Duration.INDEFINITE) {
+            res = true;
         }
 
         return res;
@@ -140,12 +140,10 @@ class UtilsLibrary {
     }
 
     static Update getLatestAppVersionStore(Context context, UpdateFrom updateFrom, GitHub gitHub) {
-        switch (updateFrom) {
-            case GOOGLE_PLAY:
-                return getLatestAppVersionGooglePlay(context);
-            default:
-                return getLatestAppVersionHttp(context, updateFrom, gitHub);
+        if (updateFrom == UpdateFrom.GOOGLE_PLAY) {
+            return getLatestAppVersionGooglePlay(context);
         }
+        return getLatestAppVersionHttp(context, updateFrom, gitHub);
     }
 
     private static Update getLatestAppVersionGooglePlay(Context context) {
@@ -155,7 +153,7 @@ class UtilsLibrary {
         URL updateURL = getUpdateURL(context, UpdateFrom.GOOGLE_PLAY, null);
 
         try {
-            version = getJsoupString(updateURL.toString(), ".hAyfc .htlgb", 7);
+            version = getJsoupString(updateURL.toString());
 
             //TODO: Release Notes for Google Play is not working
             //recentChanges = getJsoupString(updateURL.toString(), ".W4P4ne .DWPxHb", 1);
@@ -172,18 +170,18 @@ class UtilsLibrary {
         return new Update(version, recentChanges, updateURL);
     }
 
-    private static String getJsoupString(String url, String css, int position) throws Exception {
+    private static String getJsoupString(String url) throws Exception {
         return Jsoup.connect(url)
                 .timeout(30000)
                 .userAgent("Mozilla/5.0 (Windows; U; WindowsNT 5.1; en-US; rv1.8.1.6) Gecko/20070725 Firefox/2.0.0.6")
                 .get()
-                .select(css)
-                .get(position)
+                .select(".hAyfc .htlgb")
+                .get(7)
                 .ownText();
     }
 
     private static Update getLatestAppVersionHttp(Context context, UpdateFrom updateFrom, GitHub gitHub) {
-        Boolean isAvailable = false;
+        boolean isAvailable = false;
         String source = "";
         OkHttpClient client = new OkHttpClient();
         URL url = getUpdateURL(context, updateFrom, gitHub);
@@ -195,10 +193,15 @@ class UtilsLibrary {
         try {
             Response response = client.newCall(request).execute();
             body = response.body();
-            BufferedReader reader = new BufferedReader(new InputStreamReader(body.byteStream(), "UTF-8"));
+            assert body != null;
+            BufferedReader reader = null;
+            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.KITKAT) {
+                reader = new BufferedReader(new InputStreamReader(body.byteStream(), StandardCharsets.UTF_8));
+            }
             StringBuilder str = new StringBuilder();
 
             String line;
+            assert reader != null;
             while ((line = reader.readLine()) != null) {
                 switch (updateFrom) {
                     case GITHUB:
@@ -225,7 +228,7 @@ class UtilsLibrary {
                 Log.e("AppUpdater", "Cannot retrieve latest version. Is it configured properly?");
             }
 
-            response.body().close();
+            Objects.requireNonNull(response.body()).close();
             source = str.toString();
         } catch (FileNotFoundException e) {
             Log.e("AppUpdater", "App wasn't found in the provided source. Is it published?");
@@ -316,7 +319,7 @@ class UtilsLibrary {
     }
 
     static Boolean isNetworkAvailable(Context context) {
-        Boolean res = false;
+        boolean res = false;
         ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
         if (cm != null) {
             NetworkInfo networkInfo = cm.getActiveNetworkInfo();

@@ -10,7 +10,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3382b76b-b00a-48e1-b594-64dbccac4744" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/library/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/src/main/java/com/github/tutorialsandroid/appxupdater/AppUpdater.java" beforeDir="false" afterPath="$PROJECT_DIR$/library/src/main/java/com/github/tutorialsandroid/appxupdater/AppUpdater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/src/main/java/com/github/tutorialsandroid/appxupdater/AppUpdaterUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/library/src/main/java/com/github/tutorialsandroid/appxupdater/AppUpdaterUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/src/main/java/com/github/tutorialsandroid/appxupdater/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/library/src/main/java/com/github/tutorialsandroid/appxupdater/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/src/main/java/com/github/tutorialsandroid/appxupdater/HandlerXML.java" beforeDir="false" afterPath="$PROJECT_DIR$/library/src/main/java/com/github/tutorialsandroid/appxupdater/HandlerXML.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/src/main/java/com/github/tutorialsandroid/appxupdater/LibraryPreferences.java" beforeDir="false" afterPath="$PROJECT_DIR$/library/src/main/java/com/github/tutorialsandroid/appxupdater/LibraryPreferences.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/src/main/java/com/github/tutorialsandroid/appxupdater/ParserJSON.java" beforeDir="false" afterPath="$PROJECT_DIR$/library/src/main/java/com/github/tutorialsandroid/appxupdater/ParserJSON.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/src/main/java/com/github/tutorialsandroid/appxupdater/UtilsDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/library/src/main/java/com/github/tutorialsandroid/appxupdater/UtilsDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/src/main/java/com/github/tutorialsandroid/appxupdater/UtilsLibrary.java" beforeDir="false" afterPath="$PROJECT_DIR$/library/src/main/java/com/github/tutorialsandroid/appxupdater/UtilsLibrary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/src/main/java/com/github/tutorialsandroid/appxupdater/enums/AppUpdaterError.java" beforeDir="false" afterPath="$PROJECT_DIR$/library/src/main/java/com/github/tutorialsandroid/appxupdater/enums/AppUpdaterError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/src/main/java/com/github/tutorialsandroid/appxupdater/enums/Display.java" beforeDir="false" afterPath="$PROJECT_DIR$/library/src/main/java/com/github/tutorialsandroid/appxupdater/enums/Display.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/src/main/java/com/github/tutorialsandroid/appxupdater/enums/Duration.java" beforeDir="false" afterPath="$PROJECT_DIR$/library/src/main/java/com/github/tutorialsandroid/appxupdater/enums/Duration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/src/main/java/com/github/tutorialsandroid/appxupdater/enums/UpdateFrom.java" beforeDir="false" afterPath="$PROJECT_DIR$/library/src/main/java/com/github/tutorialsandroid/appxupdater/enums/UpdateFrom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/src/main/java/com/github/tutorialsandroid/appxupdater/interfaces/IAppUpdater.java" beforeDir="false" afterPath="$PROJECT_DIR$/library/src/main/java/com/github/tutorialsandroid/appxupdater/interfaces/IAppUpdater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/src/main/java/com/github/tutorialsandroid/appxupdater/objects/GitHub.java" beforeDir="false" afterPath="$PROJECT_DIR$/library/src/main/java/com/github/tutorialsandroid/appxupdater/objects/GitHub.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/src/main/java/com/github/tutorialsandroid/appxupdater/objects/Update.java" beforeDir="false" afterPath="$PROJECT_DIR$/library/src/main/java/com/github/tutorialsandroid/appxupdater/objects/Update.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/src/main/java/com/github/tutorialsandroid/appxupdater/objects/Version.java" beforeDir="false" afterPath="$PROJECT_DIR$/library/src/main/java/com/github/tutorialsandroid/appxupdater/objects/Version.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595253607882</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="UPDATE GRADLE">
+      <created>1595254853604</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1595254853604</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -183,13 +210,13 @@
     <option name="LAST_COMMIT_MESSAGE" value="UPDATE GRADLE" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="213" y="0" key="CommitChangelistDialog2" timestamp="1595253606286">
+    <state x="213" y="0" key="CommitChangelistDialog2" timestamp="1595254851739">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="213" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1595253606286" />
-    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1595253612042">
+    <state x="213" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1595254851739" />
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1595254857247">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1595253612042" />
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1595254857247" />
   </component>
 </project>

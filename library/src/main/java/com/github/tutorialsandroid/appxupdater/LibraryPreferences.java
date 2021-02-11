@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
 class LibraryPreferences {
+
     private SharedPreferences sharedPreferences;
     private SharedPreferences.Editor editor;
 
@@ -33,5 +34,4 @@ class LibraryPreferences {
         editor.putInt(KeySuccessfulChecks, checks);
         editor.commit();
     }
-
 }

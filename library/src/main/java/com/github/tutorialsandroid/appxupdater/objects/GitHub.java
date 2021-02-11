@@ -1,9 +1,7 @@
 package com.github.tutorialsandroid.appxupdater.objects;
 
-/**
- * @author Tushar Masram
- */
 public class GitHub {
+
     private String gitHubUser;
     private String gitHubRepo;
 
@@ -29,11 +27,7 @@ public class GitHub {
     }
 
     public static Boolean isGitHubValid(GitHub gitHub) {
-        if (gitHub == null || gitHub.getGitHubUser().length() == 0 || gitHub.getGitHubRepo().length() == 0) {
-            return false;
-        } else {
-            return true;
-        }
+        return gitHub != null && gitHub.getGitHubUser().length() != 0 && gitHub.getGitHubRepo().length() != 0;
     }
 
 }
