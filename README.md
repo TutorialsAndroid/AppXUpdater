@@ -4,7 +4,7 @@
 
 ## And Don't Forget To Follow Me On Instagram
 
-<p align="center">Follow me on instagram to stay up-to-date https://instagram.com/akshay_sunil_masram
+<p align="center">Follow me on instagram to stay up-to-date https://instagram.com/akshay.sunil.masram.1998
 	
 **LIBRARY AVAILABLE ON JITPACK.IO**
 
