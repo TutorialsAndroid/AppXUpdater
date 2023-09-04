@@ -2,6 +2,8 @@
 
 <p align="center">Android Library that checks for updates on Google Play, GitHub, Amazon, F-Droid or your own server. This library notifies your apps' updates by showing a Material dialog, Snackbar or notification.
 
+<p align="center">Original library can be found on https://github.com/javiersantos/AppUpdater
+
 ## And Don't Forget To Follow Me On Instagram
 
 <p align="center">Follow me on instagram to stay up-to-date https://instagram.com/a.masram444
